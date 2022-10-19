@@ -3,4 +3,3 @@
 .env
 .env.example
 yarn.lock
-/firebase/Data/Connection.ts
