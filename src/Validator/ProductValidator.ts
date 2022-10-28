@@ -9,7 +9,7 @@ export const productValidatorPost = async(id: string, Product: string[]) => {
 }
 
 export const idExists = async(id: string) => {
-  return await isExist(id)
+  return !await isExist(id)
 }
 
 function validateEmail(email:string){
@@ -19,8 +19,4 @@ function validateEmail(email:string){
 
 function validateProducts(Product:string[]) {
   return Product.length > 0 ? true : false
-}
-
-async function Exits(id:string) {
-  return await isExist(id);
 }

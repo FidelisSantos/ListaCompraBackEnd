@@ -4,7 +4,6 @@ import { ProductControllers} from "./controllers";
 import bodyParser from "body-parser";
 
 var jsonParser = bodyParser.json();
-var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 const routes = Router();
 

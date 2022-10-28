@@ -6,6 +6,7 @@ export const isExist =  async (id: string) =>{
   data.forEach(function(value) {
     if(value.id === id)
     {
+      console.log("entrei")
        return true
     }
   })

@@ -5,8 +5,6 @@ import { IProduct } from '../interfaces/IProduct';
 export const productServices = {
   Post :async(id: string, Product: string[]) => {
     if(await productValidatorPost(id, Product)){
-      console.log(id)
-      console.log(Product)
       try {
         await ProductData.create(Product, id);
         return true;
@@ -30,6 +28,7 @@ export const productServices = {
   Delete: async(id:string) => {
     if(await idExists(id)){
       try{
+        console.log(await idExists(id));
         await ProductData.delete(id);
         return true;
       }catch(error){
